@@ -2,9 +2,9 @@ package comporta;
 
 
 import jade.core.Agent;
-import jade.core.behaviours.Behaviour;
 import jade.core.behaviours.TickerBehaviour;
 
+@SuppressWarnings("serial")
 public class Temporizador extends TickerBehaviour {
 
 	String TAG;

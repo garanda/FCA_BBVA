@@ -4,6 +4,7 @@ package comporta;
 import jade.core.Agent;
 import jade.core.behaviours.TickerBehaviour;
 
+@SuppressWarnings("serial")
 public class TempoAtras extends TickerBehaviour {
 
 	String TAG;

@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+//import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
 public class Datos {
 
@@ -22,24 +22,24 @@ public class Datos {
 	static boolean iniciado = false;
 	
 	
-	static MysqlDataSource dataSource = new MysqlDataSource();
+//	static MysqlDataSource dataSource = new MysqlDataSource();
 	
 	public static boolean initDatos() {
 		boolean devolver = true;
 		
 		if (!iniciado) {
-			dataSource.setUser("garanda");
-			dataSource.setPassword("libertad");
-			dataSource.setDatabaseName("gonzalo_twitter");
-			dataSource.setServerName("150.214.140.134");
-			try {
-				conexion = dataSource.getConnection();
-				System.out.println("Conectado");
-				iniciado = true;
-			} catch (SQLException e) {
-				devolver= false;
-				e.printStackTrace();
-			}
+//			dataSource.setUser("garanda");
+//			dataSource.setPassword("libertad");
+//			dataSource.setDatabaseName("gonzalo_twitter");
+//			dataSource.setServerName("150.214.140.134");
+//			try {
+//				conexion = dataSource.getConnection();
+//				System.out.println("Conectado");
+//				iniciado = true;
+//			} catch (SQLException e) {
+//				devolver= false;
+//				e.printStackTrace();
+//			}
 		}
 		return devolver;
 	}
