@@ -37,15 +37,15 @@ public class Ex3 {
 
 
         try {
-            GeoLocation geo = new GeoLocation(40.42,-3.67); // NYC
-//            Query query1 = new Query().geoCode(geo,150,"km").since("2010-10-01").until("2011-12-11");
+            GeoLocation geo = new GeoLocation(40.42,-3.67); // Madrid
             Query query1 = new Query();
-            query1.setGeoCode(geo,150,"km");
+            ///query1.setGeoCode(geo,150,"km");
+            query1.setQuery("bbva");
             query1.setSince("2012-10-01");
             query1.setUntil("2013-11-10");
             query1.setCount(100);
             
-            query1.setResultType("recent");
+//            query1.setResultType("recent");
             
                 long n=0;
                 QueryResult result1 = null;
